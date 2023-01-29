@@ -1,0 +1,39 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --blue-clr: #1495f0;
+  --red-clr: #ea4335;
+  --orange-clr: #ffb017;
+  --green-clr: #5cb85c;
+  --violet-clr: #d39bf5;
+  --black-clr: #000000;
+  --black-clr-2: #120c39;
+  --gray-clr: #88859c;
+  --white-clr: #fff;
+  --pink-clr: #fd688c;
+  --pink-clr-2: #ffe1e8;
+
+  --opacity-clr-1: #dceffd;
+  --opacity-clr-2: #fce3e1;
+  --opacity-clr-3: #ffefd1;
+  --opacity-clr-4: #def1de;
+  --opacity-clr-5: #efdcfb;
+  --opacity-clr-6: #f2f2f6;
+  --opacity-clr-7: #f2f2f2;
+
+  /*========== Font and typography ==========*/
+
+  // FONT SIZE
+  --fs-1: 9px;
+  --fs-2: 10px;
+  --fs-3: 11px;
+  --fs-4: 12px;
+  --fs-5: 13px;
+  --fs-6: 14px;
+  --fs-7: 18px;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}

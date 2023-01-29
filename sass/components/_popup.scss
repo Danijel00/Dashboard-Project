@@ -1,0 +1,87 @@
+.popup {
+  &__card {
+    padding-top: 21px;
+    display: flex;
+    flex-direction: column;
+    @include absCenter;
+    top: 50%;
+    left: 50%;
+    background-color: var(--white-clr);
+    border-radius: 9px;
+    border: 0.5px solid rgba(160, 160, 160, 1);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms 200ms;
+    max-width: 625px;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    @media screen and(max-width: 1400px) {
+      max-width: 100%;
+      width: 70%;
+    }
+
+    @media screen and(max-width: 968px) {
+      width: 90%;
+    }
+
+    @media screen and(max-width: 600px) {
+      height: 90%;
+      overflow-y: scroll;
+    }
+  }
+
+  h1 {
+    padding-left: 20px;
+    font-family: medium-font;
+    line-height: 16.5px;
+  }
+
+  &__divider {
+    margin: 17px 0 25px 0;
+  }
+
+  &__container {
+    padding-left: 20px;
+    padding-right: 26px;
+
+    article {
+      margin-bottom: 10rem;
+
+      @media screen and(max-width: 968px) {
+        margin-bottom: 2rem;
+      }
+
+      @media screen and(max-width: 600px) {
+        margin-bottom: 1rem;
+      }
+
+      line-height: 16.5px;
+      p {
+        margin-bottom: 1.5rem;
+        font-size: var(--fs-6);
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px 12px;
+  }
+
+  &__button {
+    padding: 9.12px 14px;
+    width: 70px;
+    height: 30.39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 12px;
+    font-size: var(--fs-4);
+  }
+}

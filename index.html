@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <!--=============== CUSTOM CSS ===============-->
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header class="header" id="header">
+      <div class="header__box" aria-label="Primary navigation">
+        <a href="#"><img src="assets/img/logo.svg" alt="Logo" /></a>
+        <div class="header__box-notification">
+          <button type="button">
+            <img src="assets/img/bell.svg" alt="notifications" />
+            <span>2</span>
+          </button>
+          <div class="header__box-notification--message">
+            <h2>Notification 1</h2>
+            <h2>Notification 2</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <ul class="sidebar__list">
+        <li class="sidebar__list-item">
+          <a href="#"
+            ><img src="assets/img/icon-1.svg" alt="pulse" /><span
+              >Pulse</span
+            ></a
+          >
+        </li>
+        <li class="sidebar__list-item">
+          <a href="#"
+            ><img src="assets/img/icon-2.svg" alt="meeting" /><span
+              >Meeting</span
+            ></a
+          >
+        </li>
+        <li class="sidebar__list-item">
+          <a href="#"
+            ><img src="assets/img/icon-3.svg" alt="items" /><span
+              >Items</span
+            ></a
+          >
+        </li>
+        <li class="sidebar__list-item">
+          <a href="#"
+            ><img src="assets/img/icon-4.svg" alt="actions" /><span
+              >Actions</span
+            ></a
+          >
+        </li>
+      </ul>
+    </aside>
+
+    <!-- ======= MAIN ======= -->
+    <div class="main__container">
+      <main>
+        <!-- ======= HOME SECTION ======= -->
+        <section class="container action">
+          <div class="action__top">
+            <h2>Waiting your Action</h2>
+            <div class="action__top-toggle" id="toggle-on-calendar">
+              <img src="assets/img/icon-15.svg" alt="toggle" />
+            </div>
+          </div>
+          <div class="flex flex-jcb flex-gap">
+            <div class="action__wrapper flex">
+              <div class="action__box">
+                <div class="action__box-wrap flex flex-jcb">
+                  <div class="action__box-icon action__box-icon--1">
+                    <img src="assets/img/icon-5.svg" alt="" />
+                  </div>
+                  <h2>23</h2>
+                </div>
+                <h4>Meetings</h4>
+              </div>
+
+              <div class="action__box">
+                <div class="action__box-wrap flex flex-jcb">
+                  <div class="action__box-icon action__box-icon--2">
+                    <img src="assets/img/icon-8.svg" alt="" />
+                  </div>
+                  <h2>11</h2>
+                </div>
+                <h4>Items</h4>
+              </div>
+
+              <div class="action__box">
+                <div class="action__box-wrap flex flex-jcb">
+                  <div class="action__box-icon action__box-icon--3">
+                    <img src="assets/img/icon-9.svg" alt="" />
+                  </div>
+                  <h2>15</h2>
+                </div>
+                <h4>Actions</h4>
+              </div>
+
+              <div class="action__box">
+                <div class="action__box-wrap flex flex-jcb">
+                  <div class="action__box-icon action__box-icon--4">
+                    <img src="assets/img/icon-10.svg" alt="" />
+                  </div>
+                  <h2>9</h2>
+                </div>
+                <h4>Reminders</h4>
+              </div>
+
+              <div class="action__box">
+                <div class="action__box-wrap flex flex-jcb">
+                  <div class="action__box-icon action__box-icon--5">
+                    <img src="assets/img/icon-11.svg" alt="" />
+                  </div>
+                  <h2>18</h2>
+                </div>
+                <h4>Notes</h4>
+              </div>
+            </div>
+
+            <div>
+              <button type="button" class="button action__button" id="add-item">
+                + Quick Item
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="container details">
+          <table class="details__table">
+            <!-- Table Head -->
+            <thead class="details__table-head">
+              <tr>
+                <th>Date</th>
+                <th>Title</th>
+                <th>Business Unit</th>
+                <th>With User</th>
+                <th>Delay</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody class="details__table-body details__table-body--1">
+              <tr>
+                <td data-label="Date">
+                  <div>
+                    <span>APR</span>
+                    <p>9</p>
+                  </div>
+                </td>
+                <td data-label="Title">
+                  <h2>Item Title Item Title Item Title</h2>
+                </td>
+                <td data-label="Business Unit">
+                  <h2>Business Unit Business ...</h2>
+                </td>
+                <td data-label="With User">
+                  <img src="assets/img/person-1.png" alt="person-1" />
+                </td>
+                <td data-label="Delay">
+                  <div class="details__table-body--delay">
+                    <span>1d Overdue</span>
+                    <div>
+                      <img src="assets/img/icon-12.svg" alt="eye" />
+                    </div>
+                  </div>
+                </td>
+                <td data-label="Status">
+                  <span
+                    class="details__table-body-status details__table-body-status--1"
+                    >Approved</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+
+            <tbody class="details__table-body details__table-body--2">
+              <tr>
+                <td>
+                  <div>
+                    <span>APR</span>
+                    <p>9</p>
+                  </div>
+                </td>
+                <td><h2>Item Title Item Title Item Title</h2></td>
+                <td><h2>Business Unit Business ...</h2></td>
+                <td>
+                  <img src="assets/img/person-2.png" alt="person-2" />
+                </td>
+                <td>
+                  <div class="details__table-body--delay">
+                    <span>1d Overdue</span>
+                    <div>
+                      <img src="assets/img/icon-12.svg" alt="eye" />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span
+                    class="details__table-body-status details__table-body-status--2"
+                    >In Progress</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+
+            <tbody class="details__table-body details__table-body--3">
+              <tr>
+                <td>
+                  <div>
+                    <span>APR</span>
+                    <p>11</p>
+                  </div>
+                </td>
+                <td><h2>Item Title Item Title Item Title</h2></td>
+                <td><h2>Business Unit Business ...</h2></td>
+                <td>
+                  <div>
+                    <img src="assets/img/icon-14.svg" alt="person-3" />
+                  </div>
+                </td>
+                <td>
+                  <div class="details__table-body--delay">
+                    <span>1d Overdue</span>
+                    <div>
+                      <img src="assets/img/icon-12.svg" alt="eye" />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span
+                    class="details__table-body-status details__table-body-status--3"
+                    >Rejected</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- ===== TASKS SECTION ===== -->
+        <section class="container tasks">
+          <div class="tasks__wrapper">
+            <div class="tasks__top">
+              <h2>Tasks you initiated</h2>
+              <h4>Stay tuned with task you initiated</h4>
+            </div>
+            <div class="tasks__wrapper-divider"></div>
+            <div class="tasks__container">
+              <div class="tasks__left">
+                <!-- Left -->
+                <div class="tasks__left-box">
+                  <img src="assets/img/person-3.png" alt="person-3" />
+                  <div>
+                    <span>Create new finance document</span>
+                    <h4>Edited 5 hours ago</h4>
+                  </div>
+                </div>
+                <div class="tasks__left-progress">
+                  <h3>22 May</h3>
+                  <span class="tasks__left-progress--1">80%</span>
+                </div>
+              </div>
+
+              <div class="tasks__left">
+                <!-- Left -->
+                <div class="tasks__left-box">
+                  <img src="assets/img/person-4.png" alt="person-4" />
+                  <div>
+                    <span>Create new finance document</span>
+                    <h4>Edited 5 hours ago</h4>
+                  </div>
+                </div>
+                <div class="tasks__left-progress">
+                  <h3>22 May</h3>
+                  <span class="tasks__left-progress--2">20%</span>
+                </div>
+              </div>
+
+              <div class="tasks__left">
+                <!-- Left -->
+                <div class="tasks__left-box">
+                  <img src="assets/img/person-5.png" alt="person-5" />
+                  <div>
+                    <span>Create new finance document</span>
+                    <h4>Edited 5 hours ago</h4>
+                  </div>
+                </div>
+                <div class="tasks__left-progress">
+                  <h3>22 May</h3>
+                  <span class="tasks__left-progress--3">50%</span>
+                </div>
+              </div>
+
+              <div class="tasks__left">
+                <!-- Left -->
+                <div class="tasks__left-box">
+                  <img src="assets/img/person-6.png" alt="person-6" />
+                  <div>
+                    <span>Create new finance document</span>
+                    <h4>Edited 5 hours ago</h4>
+                  </div>
+                </div>
+                <div class="tasks__left-progress">
+                  <h3>22 May</h3>
+                  <span class="tasks__left-progress--4">90%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tasks__wrapper">
+            <div class="tasks__top tasks__top-right">
+              <h2>Overdue Actions</h2>
+              <h4>You’ re late, hurry up!</h4>
+            </div>
+            <div class="tasks__wrapper-divider"></div>
+            <div class="tasks__container">
+              <div class="tasks__right">
+                <!-- Right -->
+                <div class="tasks__right-box">
+                  <img src="assets/img/person-7.png" alt="person-7" />
+                  <div>
+                    <span>Create new finance document</span>
+                    <h4>Edited 5 hours ago</h4>
+                  </div>
+                </div>
+                <div class="tasks__right-progress">
+                  <h3>22 May</h3>
+                  <span class="tasks__left-progress--5">20%</span>
+                </div>
+              </div>
+
+              <div class="tasks__right">
+                <!-- Right -->
+                <div class="tasks__right-box">
+                  <img src="assets/img/person-8.png" alt="person-8" />
+                  <div>
+                    <span>Create new finance document</span>
+                    <h4>Edited 5 hours ago</h4>
+                  </div>
+                </div>
+                <div class="tasks__right-progress">
+                  <h3>22 May</h3>
+                  <span class="tasks__left-progress--6">80%</span>
+                </div>
+              </div>
+
+              <div class="tasks__right">
+                <!-- Right -->
+                <div class="tasks__right-box">
+                  <img src="assets/img/person-9.png" alt="person-9" />
+                  <div>
+                    <span>Create new finance document</span>
+                    <h4>Edited 5 hours ago</h4>
+                  </div>
+                </div>
+                <div class="tasks__right-progress">
+                  <h3>22 May</h3>
+                  <span class="tasks__left-progress--7">90%</span>
+                </div>
+              </div>
+              <div class="tasks__right">
+                <!-- Right -->
+                <div class="tasks__right-box">
+                  <img src="assets/img/person-10.png" alt="person-10" />
+                  <div>
+                    <span>Create new finance document</span>
+                    <h4>Edited 5 hours ago</h4>
+                  </div>
+                </div>
+                <div class="tasks__right-progress">
+                  <h3>22 May</h3>
+                  <span class="tasks__left-progress--8">50%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <section class="calendar">
+        <div class="calendar__top">
+          <h2>Calendar</h2>
+          <button type="button" id="toggle-off-calendar">
+            <img src="assets/img/close.svg" alt="close" />
+          </button>
+        </div>
+
+        <div class="calendar__wrapper">
+          <div class="calendar__meeting">
+            <div class="calendar__meeting-left">
+              <h4>Meeting name</h4>
+              <h4>21.04.2022</h4>
+            </div>
+            <div class="calendar__meeting-right">
+              <h2></h2>
+            </div>
+          </div>
+
+          <div class="calendar__meeting">
+            <div class="calendar__meeting-left">
+              <h4>Meeting name</h4>
+              <h4>21.04.2022</h4>
+            </div>
+            <div class="calendar__meeting-right">
+              <h4>Urgent</h4>
+            </div>
+          </div>
+
+          <div class="calendar__meeting">
+            <div class="calendar__meeting-left">
+              <h4>Meeting name</h4>
+              <h4>21.04.2022</h4>
+            </div>
+            <div class="calendar__meeting-right">
+              <h4>Urgent</h4>
+            </div>
+          </div>
+
+          <div class="calendar__meeting">
+            <div class="calendar__meeting-left">
+              <h4>Meeting name</h4>
+              <h4>21.04.2022</h4>
+            </div>
+            <div class="calendar__meeting-right">
+              <h2></h2>
+            </div>
+          </div>
+
+          <div class="calendar__meeting">
+            <div class="calendar__meeting-left">
+              <h4>Meeting name</h4>
+              <h4>21.04.2022</h4>
+            </div>
+            <div class="calendar__meeting-right">
+              <h4>Urgent</h4>
+            </div>
+          </div>
+
+          <div class="calendar__meeting">
+            <div class="calendar__meeting-left">
+              <h4>Meeting name</h4>
+              <h4>21.04.2022</h4>
+            </div>
+            <div class="calendar__meeting-right">
+              <h4>Urgent</h4>
+            </div>
+          </div>
+
+          <div class="calendar__add">
+            <button type="button">Add New Item</button>
+          </div>
+
+          <div class="calendar__form">
+            <label class="calendar__form-label" for="name">Meeting Name</label>
+            <input
+              class="calendar__form-input"
+              type="text"
+              name="name"
+              id="name"
+              required
+            />
+
+            <label class="calendar__form-label" for="date">Date</label>
+            <div class="calendar__form-box">
+              <input
+                class="calendar__form-input"
+                type="text"
+                name="date"
+                id="date"
+                onfocus="(this.type='date')"
+                onblur="if(!this.value) this.type='text'"
+                required
+              />
+              <img src="./assets/img/icon-7.svg" alt="calendar-icon" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Create item -->
+    <div class="create overlay" id="create">
+      <div class="create__card" id="card">
+        <h1>Create Quick Item</h1>
+
+        <div class="divider"></div>
+
+        <div class="create__container">
+          <div class="create__form">
+            <div class="create__form-top">
+              <label for="title">Item Title</label>
+              <input type="text" name="title" id="title" />
+            </div>
+
+            <div class="create__form-group">
+              <div>
+                <label for="type">Type</label>
+                <input type="text" name="type" id="type" />
+              </div>
+              <div>
+                <label for="business">Business Unit</label>
+                <input type="text" name="business" id="business" />
+              </div>
+            </div>
+
+            <div class="create__form-group">
+              <div>
+                <label for="due-date">Due Date</label>
+                <input type="text" name="due-date" id="due-date" />
+              </div>
+              <div>
+                <label for="priority">Priority</label>
+                <input type="text" name="priority" id="priority" />
+              </div>
+            </div>
+          </div>
+
+          <div class="create__form-group">
+            <div class="create__content">
+              <h4>Job Title</h4>
+              <label for="coordinator" class="create__content-label">
+                <input
+                  class="create__content-input"
+                  type="checkbox"
+                  name="coordinator"
+                  id="coordinator"
+                />
+                <span class="create__content-checkbox"></span>
+                Marketing Coordinator
+              </label>
+
+              <label for="designer" class="create__content-label">
+                <input
+                  class="create__content-input"
+                  type="checkbox"
+                  name="designer"
+                  id="designer"
+                />
+                <span class="create__content-checkbox"></span>
+                Web Designer
+              </label>
+
+              <label for="sales" class="create__content-label">
+                <input
+                  class="create__content-input"
+                  type="checkbox"
+                  name="sales"
+                  id="sales"
+                />
+                <span class="create__content-checkbox"></span>
+                President of Sales
+              </label>
+            </div>
+
+            <div class="create__content">
+              <h4>Languages</h4>
+              <label for="spanish" class="create__content-label">
+                <input
+                  class="create__content-input"
+                  type="checkbox"
+                  name="spanish"
+                  id="spanish"
+                />
+                <span class="create__content-checkbox"></span>
+                Spanish
+              </label>
+
+              <label for="chinese" class="create__content-label">
+                <input
+                  class="create__content-input"
+                  type="checkbox"
+                  name="chinese"
+                  id="chinese"
+                />
+                <span class="create__content-checkbox"></span>
+                Chinese
+              </label>
+
+              <label for="arabic" class="create__content-label">
+                <input
+                  class="create__content-input"
+                  type="checkbox"
+                  name="arabic"
+                  id="arabic"
+                />
+                <span class="create__content-checkbox"></span>
+                Arabic
+              </label>
+            </div>
+          </div>
+          <div class="create__objective">
+            <h2>Objective</h2>
+            <textarea></textarea>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <button
+          type="button"
+          class="button button-transparent create__button"
+          id="close-modal"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+
+    <div class="popup overlay" id="popup">
+      <div class="popup__card" id="popup-card">
+        <h1 class="primary-heading">Quick View</h1>
+
+        <div class="popup__divider divider"></div>
+
+        <div class="popup__container">
+          <article>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </article>
+        </div>
+        <div class="divider"></div>
+        <div class="popup__buttons">
+          <button
+            type="button"
+            class="button button-transparent popup__button"
+            id="close-popup-1"
+          >
+            Close
+          </button>
+          <button type="button" class="button popup__button" id="close-popup-2">
+            OK
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ======= END OF MAIN ======= -->
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
